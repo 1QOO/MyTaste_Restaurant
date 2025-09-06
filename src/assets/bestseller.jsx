@@ -1,0 +1,28 @@
+export default function BestSeller(){
+
+    return (
+        <section className="mt-[1rem]">
+            <h2 className="bg-amber-300 p-[1rem]">Try out best seller!</h2>
+            <div className="flex justify-center">
+                {[chickenSnitzel, myTasteBeef].map((item)=>(
+                    <div className="p-[2rem] text-center max-w-[400px]">
+                        <img src={item.image} alt={item.alt} className="w-max" />
+                        <span className="best_seller_dish">- {item.name} -</span>
+                    </div>
+                ))}
+            </div>
+        </section>         
+    )    
+}
+
+const chickenSnitzel = {
+    name : "Chicken Snitzel",
+    image : "/default_dish_img.jpeg",
+    alt : "default_dish"
+}
+
+const myTasteBeef = {
+    name : "MyTaste Beef",
+    image : "/default_dish_img.jpeg",
+    alt : "default_dish"
+}
