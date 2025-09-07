@@ -3,11 +3,11 @@ export default function BestSeller(){
     return (
         <section className="mt-[1rem]">
             <h2 className="bg-amber-300 p-[1rem]">Try out best seller!</h2>
-            <div className="flex justify-center">
+            <div className="flex justify-center p-[1rem] gap-[0.5rem]">
                 {[chickenSnitzel, myTasteBeef].map((item)=>(
-                    <div className="p-[2rem] text-center max-w-[400px]">
+                    <div className="best_seller_dish p-[0.5rem] text-center max-w-[400px]">
                         <img src={item.image} alt={item.alt} className="w-max" />
-                        <span className="best_seller_dish">- {item.name} -</span>
+                        <span>{item.name}</span>
                     </div>
                 ))}
             </div>
