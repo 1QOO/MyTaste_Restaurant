@@ -26,12 +26,16 @@ nav li:active{background-color: rgba(225, 225, 225, 0.3);}
 .best_seller_dish{
     line-height: 1rem;
     font-size: 1rem;
-    border: solid 1px black;
+    box-shadow: 0 0 5px 1px gray;
     border-radius: 10px;
 }
 
 .best_seller_dish>*{
     margin : 5px 0;
+}
+
+.offer{
+    box-shadow: 0 0 5px 1px gray;
 }
 
 .logo {
