@@ -2,10 +2,10 @@ export default function BestSeller(){
 
     return (
         <section className="mt-[1rem]">
-            <h2 className="bg-amber-300 p-[1rem]">Try out best seller!</h2>
+            <h2 className="bg-amber-300 p-[0.5rem]">Try out best seller!</h2>
             <div className="flex justify-center p-[1rem] gap-[0.5rem]">
                 {[chickenSnitzel, myTasteBeef].map((item)=>(
-                    <div className="best_seller_dish p-[0.5rem] text-center max-w-[400px]">
+                    <div className="best_seller_dish p-[0.5rem] text-center max-w-[400px]" key={item.name}>
                         <img src={item.image} alt={item.alt} className="w-max" />
                         <span>{item.name}</span>
                     </div>

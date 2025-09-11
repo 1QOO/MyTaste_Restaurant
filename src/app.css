@@ -1,4 +1,4 @@
-*{font-size: 1.2rem}
+/* *{font-size: 1.2rem} */
 
 body{width: 100vw;}
 
@@ -16,7 +16,6 @@ main>*{
 nav li{
     min-width: 150px;
     border: solid 1px white;
-    border-radius: 15px;
     padding: 0 0.5rem;
     text-align: center;
 }
@@ -41,5 +40,3 @@ nav li:active{background-color: rgba(225, 225, 225, 0.3);}
 .logo {
     width: 1rem;
 }
-
-td{padding-right: 1rem;}

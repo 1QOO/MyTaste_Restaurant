@@ -1,6 +1,6 @@
 export default function Footer(){
     return (
-        <footer className="bg-orange-800 w-[100vw] p-[1rem] text-white">
+        <footer className="bg-orange-800 w-[100vw] p-[1rem] text-white text-[1.2rem]">
             <span>Follow our social media :</span>
             <table>
                 <tbody>
