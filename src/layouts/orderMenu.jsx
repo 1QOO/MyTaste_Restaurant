@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import MenuCard from './menu-card.jsx'
-import OrderSumm from './order-summ.jsx'
-import { dishes, drinks } from './data/menu.js';
+import MenuCard from '../comps/menu-card.jsx'
+import OrderSumm from '../comps/order-summ.jsx'
+import { dishes, drinks } from '../data/menu.js';
 
-const DisplayMenu = ()=>{
+const OrderMenu = ()=>{
     const [dishesOrder, setDishesOrder] = useState(dishes);
     const [drinksOrder, setDrinksOrder] = useState(drinks);
     const [orderSum, setOrderSum] = useState([]);
@@ -56,7 +56,7 @@ const DisplayMenu = ()=>{
     }
     
     return(
-    <section className="text-[1.2rem]">
+    <main className="text-[1.2rem]">
         {orderIsConfirmed && <button className='fixed z-10 w-full h-full bg-[rgba(0,0,0,0.3)] font-bold text-white' 
         onClick={()=>setOrderIsConfirmed(prevVal=>{
             document.body.style.overflow = "";
@@ -72,7 +72,7 @@ const DisplayMenu = ()=>{
             <MenuList menuList={drinksOrder} classList={drinks} updateOrder={updateDrinkOrder} />
         </div>
         <OrderSumm orderSum={orderSum} confirmOrder={confirmOrder}/>
-    </section>
+    </main>
     )
 }
 
@@ -90,4 +90,4 @@ const MenuList = ({menuList, classList, updateOrder})=>{
     )
 }
 
-export default DisplayMenu;
+export default OrderMenu;

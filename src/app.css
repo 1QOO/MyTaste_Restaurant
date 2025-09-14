@@ -1,4 +1,4 @@
-/* *{font-size: 1.2rem} */
+@import 'tailwindcss';
 
 body{width: 100vw;}
 

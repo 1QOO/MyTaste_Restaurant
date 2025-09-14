@@ -1,0 +1,6 @@
+.image-card{
+    transform: var(--transform);
+    transition-duration: var(--duration);
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
