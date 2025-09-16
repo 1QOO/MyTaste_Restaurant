@@ -1,6 +1,6 @@
 export default function Introduction(){
     return (
-        <main className="p-[1rem] flex justify-center w-[100vw] gap-[2rem] flex-col">
+        <main className="p-[1rem] flex justify-center w-[100vw] gap-[2rem] flex-col lg:flex-row items-center">
             <img src="/mytaste_photo.png" alt="MyTaste_restaurant" />
             <div className="">
             <h1 className="text-6xl">MyTaste Restaurant</h1>
