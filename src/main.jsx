@@ -1,20 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot } from "react-dom/client";
+import Home from './pages/home';
+import Menu from './pages/menu';
+import Reservation from './pages/reservation';
 import './app.css'
-import Header from './layouts/header'
-import Introduction from './layouts/introduction'
-import NavLinks from './layouts/navlinks'
-import BestSeller from './layouts/bestseller'
-import Offer from './layouts/offer'
-import Footer from './layouts/footer'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Header />
-    <Introduction />
-    <NavLinks />
-    <BestSeller />
-    <Offer />
-    <Footer />
-  </StrictMode>,
-)
+const router = createBrowserRouter([
+    {path: "/", element: <Home />},
+    {path: "/menu", element: <Menu />},
+    {path:"/reservation", element: <Reservation />}
+])
+
+createRoot(document.getElementById("root")).render(
+    <RouterProvider router={router} />
+);
