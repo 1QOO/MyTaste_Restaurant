@@ -12,7 +12,7 @@ const OrderSumm =({orderSum, confirmOrder})=>{
     return (
         <div className="sticky bottom-0 p-1.5 bg-amber-100 w-[90vw] m-auto border-amber-200 border-4 border-b-0 rounded-t-lg">
             <ActionButtons toggleOrderDetail={toggleOrderDetail} confirmOrder={confirmOrder} />
-            <table className="w-[100%]">
+            <table className="w-full">
                 <thead>
                     <tr>
                         <th className="text-left">Total Order</th>

@@ -41,7 +41,7 @@ const Gallery = ()=>{
     }
 
     return (
-        <div className="text-center bg-amber-900 min-h-[60vw] text-amber-300 relative">
+        <div className="text-center bg-amber-900 min-h-[60vw] text-amber-300 relative h-[100px]">
             <h2>Table for reservation</h2>
             <div className="flex justify-center items-center h-[60vw] overflow-clip mask-x-from-70% mask-x-to-90%">
                 <Images active={active} images={images} />

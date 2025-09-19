@@ -47,7 +47,7 @@ const OrderMenu = ()=>{
             })
         })
     }
-    //AFTER ORDER IS CONFIRMED, CLEAR AL ORDER
+    //AFTER ORDER IS CONFIRMED, CLEAR ALL ORDER
     const confirmOrder = ()=>{
         if(orderSum.length===0) return 0;
         setDishesOrder(dishes);
@@ -61,25 +61,24 @@ const OrderMenu = ()=>{
     
     //DISPLAY MENU
     return(
-    <main className="text-[1.2rem]">
-        {/* DISPLAY NOTIFICATION OF CONFIRMED ORDER AFTER ORDER IS SENT */}
-        {orderIsConfirmed && <button className='fixed z-10 w-full h-full bg-[rgba(0,0,0,0.3)] font-bold text-white' 
-        onClick={()=>setOrderIsConfirmed(prevVal=>{
-            document.body.style.overflow = "";
-            return !prevVal
-        })}>Order is confirmed</button>}
+        <main className="text-[1.2rem]">
+            {/* DISPLAY NOTIFICATION OF CONFIRMED ORDER AFTER ORDER IS SENT */}
+            {orderIsConfirmed && <button className='fixed z-10 w-full h-full bg-[rgba(0,0,0,0.3)] font-bold text-white' 
+            onClick={()=>setOrderIsConfirmed(prevVal=>{
+                document.body.style.overflow = "";
+                return !prevVal
+            })}>Order is confirmed</button>}
 
-        <h1 className="bg-orange-800 py-[0.2rem] px-[1rem] mb-[0.2rem] text-white text-center font-sans">Menu</h1>
-        <h2 className="bg-amber-300 py-[0.2rem] px-[1rem] text-amber-900">Dishes</h2>
-        <div className='flex flex-col p-[1rem] gap-[1rem]'>
-            <MenuList menuList={dishesOrder} classList={dishes} updateOrder={updateDishOrder} />
-        </div>
-        <h2 className="bg-amber-300 py-[0.2rem] px-[1rem] text-amber-900">Beverages</h2>
-        <div className='flex flex-col p-[1rem] gap-[1rem]'>
-            <MenuList menuList={drinksOrder} classList={drinks} updateOrder={updateDrinkOrder} />
-        </div>
-        <OrderSumm orderSum={orderSum} confirmOrder={confirmOrder}/>
-    </main>
+            <h2 className="bg-amber-300 py-[0.2rem] px-[1rem] text-amber-900">Dishes</h2>
+            <div className='flex flex-col p-[1rem] gap-[1rem]'>
+                <MenuList menuList={dishesOrder} classList={dishes} updateOrder={updateDishOrder} />
+            </div>
+            <h2 className="bg-amber-300 py-[0.2rem] px-[1rem] text-amber-900">Beverages</h2>
+            <div className='flex flex-col p-[1rem] gap-[1rem]'>
+                <MenuList menuList={drinksOrder} classList={drinks} updateOrder={updateDrinkOrder} />
+            </div>
+            <OrderSumm orderSum={orderSum} confirmOrder={confirmOrder}/>
+        </main>
     )
 }
 

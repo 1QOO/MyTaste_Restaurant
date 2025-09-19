@@ -2,7 +2,7 @@ const ReservForm = ()=>{
     
     return (
         <section className="bg-amber-900 p-[1rem]">
-            <fieldset className="text-white border-solid border-[0.2rem] rounded-[1rem]">
+            <fieldset className="text-white border-solid border-[0.2rem] rounded-[1rem] max-w-[600px] m-auto">
                 <legend>Reserfation Form:</legend>
                 <form className="p-[1.5rem]">
                     <label htmlFor="name">Name :</label><br />

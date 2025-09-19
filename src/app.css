@@ -8,11 +8,6 @@ h1{
     font-weight: 800;
 }
 
-main>*{
-    flex:1;
-    max-width: 640px;
-}
-
 nav li{
     min-width: 150px;
     border: solid 1px white;
